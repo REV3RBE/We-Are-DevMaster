@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("scrolling-effect", window.scrollY > 0);
+    });
+
+    const menuIcon = document.querySelector('menu-mobile');
+
+    menuIcon.addEventListener('click', () => {
+        alert('clicado');
+    });
+
+</script>
+
+    <!--Nav Menu-->
+    <header class="center">
+        <a href="#" class="logo">
+            <h2>DevMaster</h2>
+        </a>
+        <nav class="nav-menu">
+            <ul class="nav-itens">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+            </ul>
+        </nav>
+        <a href="#">
+            <button class="btn-menu">
+                <h2>Get Started</h2>
+            </button>
+        </a>
+        <a href="" class="menu-mobile">
+            <i class="fas fa-align-right menu-mobile-icon"></i>
+        </a>
+        
+    </header>
+    <div class="menu-mobile-itens">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+    </div>
+    <!--End Nav Menu-->
+
+    <!--Section 01-->
+    <section class="cta-section">
+        <div class="cta-itens">
+            <h2>We Are DevMaster</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod <br>
+            tempor incididunt ut labore et dolore magna aliqua.</p>
+            <a href="#">
+                <button class="btn-cta">
+                    <h3>Get Started</h3>
+                </button>
+            </a>
+        </div>
+    </section>
+    <!--End Section 01-->
+
+    <!--Section 02-->
+    <section>
+        
+        <div class="itens">
+            <div class="about-title">
+                <h2>About Us</h2>
+            </div>
+            <div class="about-box">
+                <div class="item-single">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="item-single">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+                <div class="item-single">
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Section 01-->
+</body>
+</html>
